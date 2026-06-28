@@ -2,21 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Clonar código') {
-            steps {
-                git 'https://github.com/davidelezg-lab/demo-ci-devops_2/jenkins.git'
-            }
-        }
+        // ❌ Hemos borrado el stage "Clonar código" porque Jenkins ya lo hace solo
 
         stage('Instalar dependencias') {
             steps {
-                sh 'npm install'
+                // Aquí tus comandos, por ejemplo en Windows:
+                bat 'npm install' 
             }
         }
-
         stage('Ejecutar app (test simple)') {
             steps {
-                sh 'node app.js & sleep 5'
+                bat 'npm test'
             }
         }
     }
