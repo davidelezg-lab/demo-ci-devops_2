@@ -12,7 +12,7 @@ pipeline {
         }
 	stage('Test') {
     	    steps {
-        	sh 'npm test'
+        	bat 'npm test'
     }
 }
         stage('Ejecutar app (test simple)') {
