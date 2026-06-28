@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"¡Sin tests configurados por ahora, pero todo OK!\""
+    "test": "echo \"¡Sin tests configurados por ahora, pero todo OK.!\""
   },
   "repository": {
     "type": "git",
